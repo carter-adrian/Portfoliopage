@@ -1,28 +1,33 @@
 * {
-    box-sizing: border-box;
     padding: 0;
 }
 
 body {
-margin: 0;}
+margin: 0;
+background-color: cadetblue;
 
-body,
-html {
-    height: 100%;
 }
 
-.dragon {
-    background-image: url('images/27vangogh5-videoSixteenByNineJumbo1600-v2.jpg');
-    
+/* body,
+html {
+    /* height: 100%; */
+/* } */
+
+.bg_img{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 header {
-    padding: 0 0 1px 0;
-    font-family: 'Passions Conflict', cursive;
-    background-image: linear-gradient( rgb(196, 189, 189) 0%, rgb(45, 159, 197) 100%);
-    color: #ffffff;
-    font-size: 55px;
+    padding: 0% 20% 1px 25%;
+    font-family: sans-serif
+    background-image: linear-gradient( rgb(196, 189, 189) 0%, cadetblue 100%);
+    font-size: 45px;
     text-align: center; 
+    position: fixed;
 }
 
 header h1 {
@@ -31,7 +36,7 @@ margin-top: 0;}
 
 
 nav {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     text-decoration-color: black;
 }
@@ -49,18 +54,49 @@ li  {
     padding: 50px;
     padding-bottom: 0;
     padding-top: 0;
+    color: black;
     border-radius: 100%;
-    background: pink;
-    border: solid black;
-    color: blue;
     
 }
 li:hover {
-    transition: all .5s ease-in-out;
-    box-shadow: inset 0px 0px 0px 1px pink, 0px 0px 0px 5px blue;
-}
-figure {
-    height: 100%;
-    margin: 0;
+    transition: all 1s ease-in-out;
+    background-color: antiquewhite;
     
+}
+
+
+main    {
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+main, section {
+    display: inline-block;
+    align-content: center;
+}
+
+h2, #me {
+    margin: 0%;
+    text-align: center;
+
+    
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: left !important;
+    
+   
+}
+
+#me   {
+    margin: 0;
+    line-height: 20px;
+    
+}
+
+footer {
+    padding: 10%;
+    background-image: linear-gradient( cadetblue 0%, rgb(196, 189, 189) 100%);
 }
