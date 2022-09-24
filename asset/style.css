@@ -1,8 +1,51 @@
 * {
-    background: lightblue;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background: cross-fade(blue red);
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.dragon {
+    background-image: url('images\Dungeons-and-Dragons-Dragons-326.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font: 55px black;
+    padding: 20px;
+    font-family: 'Passions Conflict', cursive;
+    background-color: #2a607c;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+}
+
+header h1 {
+    box-sizing: border-box;
+}
+
+
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
+    justify-content: space-between;
 }
