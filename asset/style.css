@@ -4,8 +4,7 @@
 }
 
 body {
-    background: cross-fade(blue red);
-}
+margin: 0;}
 
 body,
 html {
@@ -13,39 +12,55 @@ html {
 }
 
 .dragon {
-    background-image: url('images\Dungeons-and-Dragons-Dragons-326.jpg');
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('images/27vangogh5-videoSixteenByNineJumbo1600-v2.jpg');
+    
 }
 
 header {
-    padding: 20px;
+    padding: 0 0 1px 0;
     font-family: 'Passions Conflict', cursive;
-    background-color: #2a607c;
+    background-image: linear-gradient( rgb(196, 189, 189) 0%, rgb(45, 159, 197) 100%);
     color: #ffffff;
-    font-size: 40px;
-    text-align: center;
+    font-size: 55px;
+    text-align: center; 
 }
 
 header h1 {
-    box-sizing: border-box;
-}
+margin-bottom: 0;
+margin-top: 0;}
 
 
 nav {
-    padding-top: 15px;
-    margin-right: 20px;
     font-size: 20px;
+    text-align: center;
+    text-decoration-color: black;
 }
+/* ul {
 
-nav ul {
+} */
+
+nav ul li {
     list-style-type: none;
     display: inline-block;
+    font-size: 32px;
 }
-
-li {
-    display: inline-block;
-    justify-content: space-between;
+li  {
+   
+    padding: 50px;
+    padding-bottom: 0;
+    padding-top: 0;
+    border-radius: 100%;
+    background: pink;
+    border: solid black;
+    color: blue;
+    
+}
+li:hover {
+    transition: all .5s ease-in-out;
+    box-shadow: inset 0px 0px 0px 1px pink, 0px 0px 0px 5px blue;
+}
+figure {
+    height: 100%;
+    margin: 0;
+    
 }
