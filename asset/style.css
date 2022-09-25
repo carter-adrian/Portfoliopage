@@ -1,5 +1,5 @@
 * {
-    padding: 0;
+    /* padding: 0; */
 }
 
 body {
@@ -23,8 +23,7 @@ html {
 
 header {
     padding: 0% 20% 1px 25%;
-    font-family: sans-serif
-    background-image: linear-gradient( rgb(196, 189, 189) 0%, cadetblue 100%);
+    font-family: sans-serif;
     font-size: 45px;
     text-align: center; 
     position: fixed;
@@ -50,13 +49,12 @@ nav ul li {
     font-size: 32px;
 }
 li  {
-   
     padding: 50px;
     padding-bottom: 0;
     padding-top: 0;
     color: black;
     border-radius: 100%;
-    
+background-image: url("images/whiteflower.jpg");    
 }
 li:hover {
     transition: all 1s ease-in-out;
@@ -67,36 +65,172 @@ li:hover {
 
 main    {
     text-align: center;
-    padding-top: 5px;
-    padding-left: 30%;
-    padding-right: 30%;
+   
 }
 main, section {
-    display: inline-block;
-    align-content: center;
+    display: block;
+    align-content: left;
+    justify-content: space-evenly;
+
+}
+article {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-bottom: 40px;
+    
+}
+
+div {
+    display: flex;
+    flex-direction:row;
 }
 
 h2, #me {
     margin: 0%;
-    text-align: center;
 
     
 }
 
 h2 {
     margin-bottom: 20px;
-    text-align: left !important;
-    
-   
+    text-align: center !important;
 }
 
-#me   {
-    margin: 0;
+.about .me   {
+    margin-bottom: 20px;
     line-height: 20px;
-    
+    padding: 0%;
+    text-align: left !important;
 }
 
+.contact {
+    margin-top: 20px;
+}
+.surf .LED .puzzles .run{
+    position: left;
+    width: 50%;
+
+  }
+  
+  
+  .image1, .image2, .image3, .image4 {
+    display:inline-table;
+    border-radius: 50%;
+    
+  }
+  .overlay {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: -200px;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    background-color: #008CBA;
+  }
+
+
+.overlay1, .overlay2, .overlay3, .overlay4 {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: -200px;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease-in-out;
+  background-color: none;
+  border-radius: 50%;
+}
+
+  
+.surf:hover .overlay1 {
+    opacity: 1;
+}    
+.LED:hover .overlay2 {
+    opacity: 1;    
+}
+.puzzles:hover .overlay3 {
+    opacity: 1;
+}
+.run:hover .overlay4 {
+    opacity: 1;
+}
+
+.text1, .text2, .text3, .text4 {
+color: blue;
+justify-content:space-evenly;
+font-size: 45px;
+margin-left: 0;
+  }
+ 
+
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+      }
+    
+.justify-center {
+    justify-content: center;
+      }
+.card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    /* when the screen resizes, make it so our columns don't jump in size */
+    /* transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+}
+.code-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+    color: plum;
+}
+
+.code-card .card-header {
+    /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
+    /* position: relative;
+    margin: -4rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: grey;
+    color: black;
+    border: 2px solid blue;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;}
+
+    .code-card:hover,
+.code-card:hover .card-header {
+  box-shadow: inset 0px 0px 8px plum, 0 0 15px orange;
+}
+.code-card .code-block {
+    flex-grow: 1;} */
+
+/* .code-card pre {
+        /* set styles to make it so code wraps in <pre> instead of overflowing */
+        /* white-space: pre-wrap;
+        overflow: auto;
+        tab-size: 4;
+        padding: 1.2rem 1rem;
+        color:grey;
+        border-radius: 8px;
+        /* use linear-gradient() function to create a fading background  */
+        /* display: flex;
+        align-items: center;
+      } */
+
+/* .code-card pre:active {
+        user-select: all;
+      }  */
 footer {
-    padding: 10%;
+    padding:10%;
     background-image: linear-gradient( cadetblue 0%, rgb(196, 189, 189) 100%);
 }
